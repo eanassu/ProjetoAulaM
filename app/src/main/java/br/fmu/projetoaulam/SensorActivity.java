@@ -7,26 +7,21 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.EditText;
 
-import java.util.List;
+public class SensorActivity extends AppCompatActivity {
+    EditText editTextNumberX;
+    EditText editTextNumberY;
+    EditText editTextNumberZ;
 
-public class DesenhoActivity extends AppCompatActivity {
-
-    private DesenhoView desenhoView;
-    private float acc;
-    private float currentAcc;
-    private float lastAcc;
-    private static final int ACC_LIMIT = 5000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desenho);
-        desenhoView = findViewById(R.id.desenhoView);
+        setContentView(R.layout.activity_sensor);
+        editTextNumberX = findViewById(R.id.editTextNumberX);
+        editTextNumberY = findViewById(R.id.editTextNumberY);
+        editTextNumberZ = findViewById(R.id.editTextNumberZ);
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        List<Sensor> listaSensores = sensorManager.getSensorList(Sensor.TYPE_ALL);
-        for( Sensor sensor: listaSensores ) {
-            System.out.println(sensor.getName());
-        }
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(new SensorEventListener() {
             @Override
@@ -34,12 +29,9 @@ public class DesenhoActivity extends AppCompatActivity {
                 float x = sensorEvent.values[0];
                 float y = sensorEvent.values[1];
                 float z = sensorEvent.values[2];
-                lastAcc = currentAcc;
-                currentAcc = x*x + y*y + z*z;
-                acc = currentAcc * (currentAcc-lastAcc);
-                if(acc > ACC_LIMIT ) {
-                    desenhoView.clear();
-                }
+                editTextNumberX.setText(Float.toString(x));
+                editTextNumberY.setText(Float.toString(y));
+                editTextNumberZ.setText(Float.toString(z));
             }
 
             @Override

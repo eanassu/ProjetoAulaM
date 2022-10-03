@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void abrirTesteSensores(View view) {
+        Intent intent = new Intent( this, SensorActivity.class);
+        startActivity(intent);
+    }
+
 }

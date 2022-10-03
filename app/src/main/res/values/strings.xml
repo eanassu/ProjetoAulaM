@@ -5,4 +5,5 @@
     <string name="txtGorjeta">Gorjeta:</string>
     <string name="txtTotal">Total:</string>
     <string name="txtDesenho">Desenho</string>
+    <string name="txtSensores">Sensores</string>
 </resources>

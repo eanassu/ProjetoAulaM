@@ -6,4 +6,5 @@
     <string name="txtTotal">Total:</string>
     <string name="txtDesenho">Desenho</string>
     <string name="txtSensores">Sensores</string>
+    <string name="txtTesteBD">Teste Banco de Dados</string>
 </resources>

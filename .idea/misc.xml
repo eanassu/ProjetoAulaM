@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/profsl/AndroidStudioProjects/ProjetoAulaM/app/src/main/res/layout/activity_lista_funcionarios.xml" value="0.17972831765935215" />
         <entry key="..\:/Users/profsl/AndroidStudioProjects/ProjetoAulaM/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/profsl/AndroidStudioProjects/ProjetoAulaM/app/src/main/res/layout/activity_sensor.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/profsl/AndroidStudioProjects/ProjetoAulaM/app/src/main/res/layout/activity_teste_bdactivity.xml" value="0.33" />
         <entry key="..\:/Users/profsl/AndroidStudioProjects/ProjetoAulaM/app/src/main/res/layout/activity_tip_calculator.xml" value="0.33" />
       </map>
     </option>

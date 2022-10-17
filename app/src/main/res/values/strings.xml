@@ -7,4 +7,14 @@
     <string name="txtDesenho">Desenho</string>
     <string name="txtSensores">Sensores</string>
     <string name="txtTesteBD">Teste Banco de Dados</string>
+    <string name="txtCadastrar">Cadastrar</string>
+    <string name="txtRe">RE</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtDataAdmissao">Data Admissão</string>
+    <string name="txtSalario">Salário</string>
+    <string name="txtCargo">Cargo</string>
+    <string name="txtExcluir">Excluir</string>
+    <string name="txtAlterar">Alterar</string>
+    <string name="txtBusca">Buscar pelo RE</string>
+    <string name="txtListar">Listar</string>
 </resources>

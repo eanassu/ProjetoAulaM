@@ -1,6 +1,7 @@
 package br.fmu.projetoaulam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -17,5 +18,9 @@ public class ListaFuncionariosActivity extends AppCompatActivity {
         AppDatabase db = AppDatabase.getInstance(this);
         FuncionarioDAO dao = db.funcionarioDAO();
         List<Funcionario> funcionarios = dao.getFuncionarios();
+        recyclerView.setAdapter(new FuncionarioAdapter(funcionarios, this));
+        RecyclerView.LayoutManager layout = new LinearLayoutManager(this,
+                LinearLayoutManager.VERTICAL,false);
+        recyclerView.setLayoutManager(layout);
     }
 }

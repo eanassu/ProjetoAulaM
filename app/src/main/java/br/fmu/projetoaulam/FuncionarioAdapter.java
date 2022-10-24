@@ -36,7 +36,7 @@ public class FuncionarioAdapter extends RecyclerView.Adapter {
         funcionarioViewHolder.nome.setText(funcionario.getNome());
         funcionarioViewHolder.dataAdmissao.setText(dateFormat.format(funcionario.getDataAdmissao()));
         funcionarioViewHolder.salario.setText(Double.toString(funcionario.getSalario()));
-        funcionarioViewHolder.funcao.sextText(funcionario.getFuncao());
+        funcionarioViewHolder.funcao.setText(funcionario.getFuncao());
     }
     @Override
     public int getItemCount() {

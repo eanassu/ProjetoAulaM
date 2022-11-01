@@ -17,4 +17,5 @@
     <string name="txtAlterar">Alterar</string>
     <string name="txtBusca">Buscar pelo RE</string>
     <string name="txtListar">Listar</string>
+    <string name="txtTesteTCP">Teste TCP</string>
 </resources>

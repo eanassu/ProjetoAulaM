@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void abrirTesteTcp( View view ) {
+        Intent intent = new Intent( this, TesteTCPActivity.class);
+        startActivity(intent);
+    }
+
 }
